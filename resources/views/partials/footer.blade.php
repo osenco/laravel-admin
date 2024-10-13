@@ -18,6 +18,6 @@
     @if(config('admin.copyright_link'))
     <strong>Powered by <a href="{{config('admin.copyright_link')}}" target="_blank">{{config('admin.copyright_text')}}</a></strong>
     @else
-    <strong>Powered by <a href="https://github.com/z-song/laravel-admin" target="_blank">laravel-admin</a></strong>
+    <strong>&copy; {!! date('Y') !!} <a href="https://github.com/z-song/laravel-admin" target="_blank">{!! config('app.name') !!}</a></strong>
     @endif
 </footer>
